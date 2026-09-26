@@ -1,0 +1,10 @@
+
+# what app is using
+- electron
+- vanila js 
+- react 
+- makefile just because it's seem to convinient to me
+
+# app dependecies you will need to install
+- npm
+- makefile

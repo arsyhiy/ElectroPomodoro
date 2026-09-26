@@ -1,0 +1,46 @@
+<!-- <!DOCTYPE html> -->
+<!-- <html> -->
+<!---->
+<!-- <head> -->
+<!--   <meta charset="UTF-8" /> -->
+<!--   <title>ElectroPomodoro</title> -->
+<!-- </head> -->
+<!---->
+<!-- <body> -->
+<!--   <div id="root"></div> -->
+<!---->
+<!--   <script type="module" src="/src/renderer.jsx"></script> -->
+<!-- </body> -->
+<!---->
+<!-- </html> -->
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Таймер</title>
+</head>
+
+<body>
+
+  <h1 id="timer">60</h1>
+  <button onclick="startTimer()">Старт</button>
+
+  <script>
+    <!-- let time = 60; -->
+    let time = 5;
+    let timer;
+
+    function startTimer() {
+      timer = setInterval(() => {
+        time--;
+        document.getElementById("timer").textContent = time;
+
+        if (time <= 0) {clearInterval(timer); alert("Время вышло!");}
+      }, 1000);
+    } </script>
+
+</body>
+
+</html>
